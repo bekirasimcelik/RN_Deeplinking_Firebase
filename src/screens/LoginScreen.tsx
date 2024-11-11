@@ -6,13 +6,10 @@ const LoginScreen: React.FC = () => {
   const navigation = useNavigation();
 
   const handleLogin = () => {
-    // Login işlemi tamamlandıktan sonra HomeScreen'e yönlendirme
     navigation.navigate('Home');
   };
 
   const handleForgotPassword = () => {
-    // Deeplinking ile forgotpassword ekranına yönlendirme
-    // Deeplinking URL'ini burada tetikle
     navigation.navigate('Forgot');
   };
 
