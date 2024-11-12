@@ -13,6 +13,10 @@ const LoginScreen: React.FC = () => {
     navigation.navigate('Forgot');
   };
 
+  const handleSignUp = () => {
+    navigation.navigate('SignUp');
+  };
+
   return (
     <View
       style={{
@@ -43,6 +47,11 @@ const LoginScreen: React.FC = () => {
         <TouchableOpacity onPress={handleLogin}>
           <Text style={{fontSize: 20, color: 'blue', textAlign: 'center'}}>
             Login
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={handleSignUp}>
+          <Text style={{fontSize: 20, color: 'blue', textAlign: 'center'}}>
+            Sign Up
           </Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={handleForgotPassword}>
