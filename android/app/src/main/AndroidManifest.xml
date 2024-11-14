@@ -16,6 +16,7 @@
             android:launchMode="singleTask"
             android:windowSoftInputMode="adjustResize"
             android:exported="true">
+
             <!-- Ana başlatma intenti -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,14 +31,13 @@
                 <data android:scheme="deeplinking" />
             </intent-filter>
 
-            <!-- Universal Links ve HTTP/HTTPS URL'leri -->
+            <!-- Firebase Dynamic Links için HTTP/HTTPS URL'leri -->
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="http" />
                 <data android:scheme="https" />
-                <data android:host="www.example.com" />
+                <data android:host="deeplinkingemail.page.link" />
             </intent-filter>
         </activity>
     </application>
